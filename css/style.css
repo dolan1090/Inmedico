@@ -15,18 +15,33 @@ body {
 }
 
 @font-face { 
-  font-family: Poppins-Medium; 
-  src: url(fonts/Poppins-Complete/Poppins-Medium.otf); 
+  font-family: SVN-Poppins-Medium; 
+  src: url(fonts/SVN-Poppins-Medium.otf); 
 } 
+
+@font-face { 
+  font-family: SVN-Poppins-Light; 
+  src: url(fonts/SVN-Poppins-Light.otf); 
+} 
+
+@font-face { 
+  font-family: SVN-Poppins-Regular; 
+  src: url(fonts/PSVN-Poppins-Regular.otf); 
+}
+
+@font-face { 
+  font-family: SVN-Poppins-Bold; 
+  src: url(fonts/SVN-Poppins-Bold.otf); 
+}
 
 @font-face { 
   font-family: SVN-Poppins-SemiBold; 
-  src: url(fonts/Poppins-Complete/Poppins-SemiBold.otf); 
-} 
+  src: url(fonts/SVN-Poppins-SemiBold.otf); 
+}
 
 @font-face { 
-  font-family: UTM-Trajan-Pro-Bold; 
-  src: url(fonts/Poppins-Complete/UTM-Trajan-Pro-Bold.ttf); 
+  font-family: TrajanPro-Bold; 
+  src: url(fonts/TrajanPro-Bold.otf); 
 } 
 
 .clear {
@@ -42,10 +57,13 @@ body {
 
 .show-mn {display: block !important;}
 
+.h-auto {height: auto !important;}
+
+
 .jumbotron-h {color: #fff;text-align: center;}
 .jumbotron-h .about {
     text-transform: uppercase;
-    font-family: UTM-Trajan-Pro-Bold;
+    font-family: TrajanPro-Bold;
     margin-bottom: 8px;
     font-size: calc(0.013*100vw);
 }
@@ -54,7 +72,7 @@ body {
     letter-spacing: 2px;
     font-size: calc(0.0235*100vw);
     color: #A5823B;
-    font-family: UTM-Trajan-Pro-Bold;
+    font-family: TrajanPro-Bold;
 }
 .jumbotron-h hr {
     opacity: 1;
@@ -64,7 +82,7 @@ body {
     margin: 15px auto;
 }
 .jumbotron-h p {
-    font-family: Poppins-Medium;
+    font-family: SVN-Poppins-Medium;
     font-size: 16px;
 }
 @media (max-width: 767px) {
@@ -84,17 +102,17 @@ body {
     color: #fff;
 }
 .card img {
-   filter: grayscale(100%);
-   -webkit-filter: grayscale(100%);
-   -moz-filter: grayscale(100%);
-   -ms-filter: grayscale(100%);
-   -o-filter: grayscale(100%);
+ filter: grayscale(100%);
+ -webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+ -o-filter: grayscale(100%);
 }
 .card:hover img {
-   filter: unset;
+ filter: unset;
 }
 .card:hover a, .card:hover {
-   background: #A5823B;
+ background: #A5823B;
 }
 .card .card-body {
     border-left: 2px solid #A5823B;
@@ -127,7 +145,7 @@ body {
 }
 #main-nav .sm-clean a {
     color: #FFFFFF;
-    font-family: Poppins-Medium;
+    font-family: SVN-Poppins-Medium;
     font-size: 16px;
 }
 #main-nav .sm-clean a .sub-arrow {
@@ -174,6 +192,16 @@ body {
     padding-bottom: 100px;
     overflow: hidden;
 }
+
+.mySwiper1 .swiper-slide {
+    overflow: hidden;
+    max-height: 717px;
+}
+
+.mySwiper1 .swiper-slide video {
+    width: 100%;
+}
+
 .mySwiper1 {
 	overflow: visible;
 	position: relative;
@@ -232,30 +260,74 @@ body {
 /*End slide-main*/
 
 /*Start slide-health-h*/
-.slide-health-h {padding-top: 40px;padding-bottom: 40px;background: #0D0D0D;}
+.slide-health-h {padding-top: 40px;padding-bottom: 200px;background: #0D0D0D;}
 
-.slide-health-h .video-health-h {
-    width: 80%;
-    max-width: 640px;
-    margin: 0 auto;
-    margin-top: 30px;
+.mySwiper2 img {
+    width: auto;
+    max-width: calc(0.235*100vw);
+    padding-top: calc(0.055*100vw);
 }
-.slide-health-h .box-iframe {
-    position: relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:
-    hidden;
+
+.mySwiper2 {
+    margin-top: 40px;
 }
-.slide-health-h iframe {
+.mySwiper2 .swiper-wrapper {
+    background: url('images/product-circle-bg.png') no-repeat center / contain;
+}
+.mySwiper2 .swiper-slide {
+    text-align: center;
+    height: calc(0.31*100vw);
+}
+
+.mySwiper2 .left-bg {
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    top: 12%;
+    left: 10%;
+    width: calc(0.09*100vw);
 }
 
+.mySwiper2 .right-bg {
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    width: calc(0.09*100vw);
+}
+
+@media (max-width: 576px) {
+    .mySwiper2 .left-bg {
+        left: 15%;
+    }
+    .mySwiper2 .right-bg {
+        right: 15%;
+    }
+}
+
+.mySwiper2 .text-bot-hh {
+    color: #A5823B;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    width: 100%;
+    bottom: -14%;
+}
+
+.mySwiper2 .ttct-sp {
+    position: absolute;
+    bottom: -28%;
+    width: 100%;
+}
+
+.mySwiper2 .ttct-sp a {
+    color: #A5823B;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+.mySwiper2 .ttct-sp:hover a {
+    color: #fff;
+}
 /*End slide-health-h*/
 
 /*Start farming-h*/
@@ -344,6 +416,11 @@ body {
 .why-choosen ul {
     list-style: none;
     padding-left: 0;
+}
+
+.why-ct {
+    font-family: SVN-Poppins-Regular;
+    font-size: 16px;
 }
 
 .why-choosen {
@@ -458,25 +535,37 @@ footer .menu-footer a {color: #fff;line-height: 30px;}
 
 footer ul {padding-left: 0;list-style: none;}
 
-footer .menu-footer > li {margin-bottom: 15px;}
+footer .menu-footer > li {margin-bottom: 20px;}
 
 footer .menu-footer > li > a {
     text-transform: uppercase;
-    font-weight: bold;
+    font-size: 21px;
+    font-family: 'SVN-Poppins-Bold';
 }
 footer {
     padding: 40px 0;
 }
 footer .menu-footer li ul li a {
     color: #adb5bd;
+    font-family: 'SVN-Poppins-Light';
 }
 footer .menu-footer a:hover {
     color: #A5823B;
 }
 
-footer .content p {margin-bottom: 0;line-height: 30px;color: #adb5bd;}
+footer .content p {
+    margin-bottom: 0;
+    line-height: 30px;
+    color: #adb5bd;
+    font-family: SVN-Poppins-Light;
+    font-size: 16px;
+}
 
-footer .content .h2 {margin-top: 15px;font-size: 21px;font-weight: bold;}
+footer .content .h2 {
+    margin-top: 15px;
+    font-size: 21px;
+    font-family: SVN-Poppins-Bold;
+}
 /*end footer*/
 
 

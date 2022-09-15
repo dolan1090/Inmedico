@@ -74,24 +74,23 @@ var swiper = new Swiper(".mySwiper1", {
     el: ".mySwiper1 .swiper-pagination",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
 });
 
-// var swiper2 = new Swiper(".mySwiper2", {
-//   loop: true,
-//   autoHeight: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-// });
+// window.onload = function()
+// {
+//   document.querySelector(".slide-main-h .swiper-wrapper").style.height = 'auto';
+// };
+
+var swiper2 = new Swiper(".mySwiper2", {
+  // autoHeight: true,
+  navigation: {    
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  effect: "flip",
+  grabCursor: true,
+});
+
 
 var swiper3 = new Swiper(".mySwiper-kh", {
   slidesPerView: 6,
