@@ -14,6 +14,10 @@ body {
     color: #fff;
 }
 
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
+
 @font-face { 
   font-family: SVN-Poppins-Medium; 
   src: url(fonts/SVN-Poppins-Medium.otf); 
@@ -64,7 +68,7 @@ body {
 .jumbotron-h .about {
     text-transform: uppercase;
     font-family: TrajanPro-Bold;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     font-size: calc(0.013*100vw);
 }
 .jumbotron-h .h2 {
@@ -102,17 +106,17 @@ body {
     color: #fff;
 }
 .card img {
- filter: grayscale(100%);
- -webkit-filter: grayscale(100%);
- -moz-filter: grayscale(100%);
- -ms-filter: grayscale(100%);
- -o-filter: grayscale(100%);
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   -o-filter: grayscale(100%);
 }
 .card:hover img {
- filter: unset;
+   filter: unset;
 }
 .card:hover a, .card:hover {
- background: #A5823B;
+   background: #A5823B;
 }
 .card .card-body {
     border-left: 2px solid #A5823B;
@@ -166,6 +170,11 @@ body {
 #main-nav .main-menu-btn-icon, #main-nav .main-menu-btn-icon:before, #main-nav .main-menu-btn-icon:after {
     background: #fff;
 }
+
+.mySwiper1 .swiper-chevron-down a {
+    color: #A5823B;
+}
+
 @media (min-width: 768px) {
     #main-nav .sm-clean {
         float: unset;
@@ -182,7 +191,31 @@ body {
 }
 @media (max-width: 767px) {
     #main-nav .nav-brand {
+        float: left;
+    }
+    #main-nav .nav-brand img {
+        max-width: 100px;
+    }
+    .main-menu-btn {
         float: right;
+        width: 50px;
+        height: 50px;
+        margin-top: 12px;
+    }
+    .main-menu-btn-icon, .main-menu-btn-icon:before, .main-menu-btn-icon:after {
+        width: 50px;
+    }
+    .main-menu-btn-icon:before {
+        top: -12px;
+    }
+    .main-menu-btn-icon:after {
+        content: '';
+        top: 12px;
+        left: 0;
+    }
+    #main-nav .sm-clean a {
+        font-size: 16px;
+        padding-left: 0;
     }
 }
 /*end main-menu*/
@@ -241,7 +274,6 @@ body {
     position: absolute;
     z-index: 9999;
     top: 20%;
-    left: 7.5%;
 }
 
 .mySwiper1 .content p {
@@ -348,66 +380,175 @@ body {
     margin: 30px auto;
 }
 
-.box-card {
-    position: relative;
-    height: 600px;
+.farming-h .box-card {
+    width: 100%;
+    margin-top: 60px;
 }
 
-.box-card .item {
+.farming-h .box-card .box-item {
+    height: 750px;
+    width: 750px;
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.farming-h .box-card .item {
     position: absolute;
     border: 2px solid #A5823B;
     border-radius: 50%;
-    padding: 10px;
-    width: calc(0.103125*100vw);
-    height: calc(0.1026*100vw);
+    padding: 24px;
+    width: 198px;
+    height: 198px;
     text-align: center;
-}
-
-.box-card .item-ng {
-    top: 0;
-    left: 44%;
-}
-
-.box-card .item-nh {
-    top: 20%;
-    left: 25%;
-    padding: 30px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    filter: unset;
+    transition: -webkit-filter .3s linear;
 }
 
 .box-card .item img {
     object-fit: contain;
-    padding: 10px;
+    margin-bottom: 20px;
+    width: 136px;
+    height: 74px;
 }
-
-.box-card figure {
+.farming-h .box-card figure {
     margin: 0;
 }
 
-.box-card .item a {
+.farming-h .box-card .item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: SVN-Poppins-Medium;
+}
+
+.farming-h .box-card .item a {
     color: #A5823B;
 }
 
-.box-card .item-tdl {
-    top: 20%;
-    right: 25%;
-    padding-top: 0px;
+.farming-h .box-card .item-1 {
+    left: calc(50% - 99px);
 }
-.box-card .item-tdl img {
-    max-height: 111px;
+
+.farming-h .box-card .item-2 {
+    top: 220px;
+    right: 0px;
 }
-.box-card .item-tgv {
-    top: 60%;
-    right: 30%;
-    padding-top: 0px;
+
+.farming-h .box-card .item-3 {
+    bottom: 45px;
+    right: 80px;
 }
-.box-card .item-tgv {
-    top: 60%;
-    right: 30%;
-    padding-top: 0px;
+
+.farming-h .box-card .item-4 {
+    bottom: 45px;
+    left: 80px;
 }
-.box-card .item-tgv img {
-    max-height: 118px;
-    padding-top: 15px;
+
+.farming-h .box-card .item-5 {
+    top: 220px;
+    left: 0px;
+}
+
+.farming-h .box-card .item:hover a {
+    color: #fff;
+}
+
+.farming-h .box-card .item:hover {
+    filter: invert(70%) sepia(95%) saturate(4261%) hue-rotate(290deg) brightness(90%) contrast(101%);
+}
+
+@media (max-width: 767px) {
+    .farming-h .box-card .box-item {
+        height: 500px;
+        width: 500px;
+    }
+
+    .farming-h .box-card .item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .box-card .item img {
+        width: 100px;
+        height: 54px;
+    }
+
+    .farming-h .box-card .item-1 {
+        left: calc(50% - 75px);
+    }
+
+    .farming-h .box-card .item-2 {
+        top: 165px;
+    }
+
+    .farming-h .box-card .item-5 {
+        top: 165px;
+    }
+
+    .farming-h .box-card .item-3 {
+        bottom: 0px;
+        right: 40px;
+    }
+
+    .farming-h .box-card .item-4 {
+        bottom: 0px;
+        left: 40px;
+    }
+}
+
+@media (max-width: 430px) {
+    .farming-h .box-card .item {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+    }
+
+    .farming-h .box-card .item img {
+        width: 80px;
+        height: 44px;
+        margin: 0;
+    }
+
+    .farming-h .box-card .item p {
+        display: none;
+    }
+
+    .farming-h .box-card .item-1 {
+        left: calc(50% - 60px);
+    }
+
+    .farming-h .box-card .box-item {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .farming-h .box-card .item-2 {
+        top: 145px;
+    }
+
+    .farming-h .box-card .item-5 {
+        top: 145px;
+    }
+}
+
+@media (max-width: 393px) {
+    .farming-h .box-card .item-2 {
+        top: 130px;
+    }
+
+    .farming-h .box-card .item-3 {
+        /* top: 135px; */
+    }
+
+    .farming-h .box-card .item-5 {
+        top: 130px;
+    }
 }
 /*End farming-h*/
 
@@ -565,6 +706,11 @@ footer .content .h2 {
     margin-top: 15px;
     font-size: 21px;
     font-family: SVN-Poppins-Bold;
+}
+@media (max-width: 767px) {    
+    .brand-bot img {
+        max-width: 100px;
+    }
 }
 /*end footer*/
 
