@@ -894,7 +894,7 @@ footer .content .h2 {
 .title-category {
     height: 321px;
     position: relative;
-    background: url('images/microbiomebanner1.png') no-repeat right, url('images/Mask-Group-40.png') no-repeat left;
+    background: url('images/bg-tin-tuc.png') no-repeat right, url('images/Mask-Group-40.png') no-repeat left;
 }
 
 .title-category h2 {
@@ -910,6 +910,7 @@ footer .content .h2 {
     .title-category {
         background: url('images/Mask-Group-40.png') no-repeat left;
         height: 120px;
+        border-top: 1px solid #555555;
     }
     .title-category h2 {
         top: 40%;
