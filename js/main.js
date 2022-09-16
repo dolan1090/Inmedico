@@ -68,7 +68,6 @@ for (var i = 0; i < menu_product_cat.length; i++) {
 
 
 var swiper = new Swiper(".mySwiper1", {
-  loop: true,
   autoHeight: true,
   pagination: {
     el: ".mySwiper1 .swiper-pagination",
@@ -81,16 +80,36 @@ var swiper = new Swiper(".mySwiper1", {
 //   document.querySelector(".slide-main-h .swiper-wrapper").style.height = 'auto';
 // };
 
-var swiper2 = new Swiper(".mySwiper2", {
-  // autoHeight: true,
-  navigation: {    
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  effect: "flip",
-  grabCursor: true,
-});
+// var swiper2 = new Swiper(".mySwiper2", {
+//   // autoHeight: true,
+//   navigation: {    
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   effect: "flip",
+//   grabCursor: true,
+// });
 
+$(document).ready(function(){
+  $('.slide-health-h').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+        // infinite: false,
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: true,
+        prevArrow:"<div class='slick-prev pull-left'><i class='fa fa-angle-left'></i></div>",
+        nextArrow:"<div class='slick-next pull-right'><i class='fa fa-angle-right'></i></div>",
+        responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+        ],
+      });
+});
 
 var swiper3 = new Swiper(".mySwiper-kh", {
   slidesPerView: 6,
