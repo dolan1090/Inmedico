@@ -110,17 +110,17 @@ body {
     color: #fff;
 }
 .card img {
-   filter: grayscale(100%);
-   -webkit-filter: grayscale(100%);
-   -moz-filter: grayscale(100%);
-   -ms-filter: grayscale(100%);
-   -o-filter: grayscale(100%);
+ filter: grayscale(100%);
+ -webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+ -o-filter: grayscale(100%);
 }
 .card:hover img {
-   filter: unset;
+ filter: unset;
 }
 .card:hover a, .card:hover {
-   background: #A5823B;
+ background: #A5823B;
 }
 .card .card-body {
     border-left: 2px solid #A5823B;
@@ -556,6 +556,7 @@ body {
 .farming-h .box-card {
     width: 100%;
     margin-top: 60px;
+    position: relative;
 }
 
 .farming-h .box-card .box-item {
@@ -581,6 +582,8 @@ body {
     align-items: center;
     filter: unset;
     transition: -webkit-filter .3s linear;
+    z-index: 2;
+    background: #141513;
 }
 
 .box-card .item img {
@@ -602,6 +605,33 @@ body {
 
 .farming-h .box-card .item a {
     color: #A5823B;
+}
+
+.bg-farming-h .item1 {
+    position: absolute;
+    top: 95px;
+    z-index: 1;
+    animation: mymove 36s linear infinite;
+    -webkit-animation: mymove 36s linear infinite;
+    -moz-animation: mymove 36s linear infinite;
+    -ms-animation: mymove 36s linear infinite;
+    -o-animation: mymove 36s linear infinite;
+}
+
+.bg-farming-h .item2 {
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+    animation: mymove 18s linear infinite;
+    -webkit-animation: mymove 18s linear infinite;
+    -moz-animation: mymove 18s linear infinite;
+    -ms-animation: mymove 18s linear infinite;
+    -o-animation: mymove 18s linear infinite;
+}
+
+.bg-farming-h {
+    display: flex;
+    justify-content: space-around;
 }
 
 .farming-h .box-card .item:nth-child(1) {
@@ -632,8 +662,12 @@ body {
     color: #fff;
 }
 
+.farming-h .box-card .item:hover img {
+    filter: brightness(100) saturate(0);
+}
+
 .farming-h .box-card .item:hover {
-    filter: invert(70%) sepia(95%) saturate(4261%) hue-rotate(290deg) brightness(90%) contrast(101%);
+    background: #A5823B;
 }
 
 @media (max-width: 767px) {
@@ -650,6 +684,16 @@ body {
     .box-card .item img {
         width: 100px;
         height: 54px;
+    }
+
+    .bg-farming-h .item1 {
+        top: 60px;
+        width: 420px;
+    }
+
+    .bg-farming-h .item2 {
+        top: 225px;
+        width: 100px;
     }
 
     .farming-h .box-card .item:nth-child(1) {
@@ -680,6 +724,15 @@ body {
         width: 120px;
         height: 120px;
         padding: 10px;
+    }
+
+    .bg-farming-h .item1 {
+        width: 350px;
+    }
+
+    .bg-farming-h .item2 {
+        top: 195px;
+        width: 80px;
     }
 
     .farming-h .box-card .item img {
