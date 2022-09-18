@@ -160,4 +160,24 @@ var swiper4 = new Swiper(".swipercard-news-other", {
   },
 });
 
+var swiper5 = new Swiper(".mySwipercard-lvkd", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  freeMode: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 5,
+      spaceBetween: 23,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+  },
+});
+
 // End slide
