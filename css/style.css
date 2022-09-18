@@ -129,17 +129,17 @@ body {
     color: #fff;
 }
 .card img {
-   filter: grayscale(100%);
-   -webkit-filter: grayscale(100%);
-   -moz-filter: grayscale(100%);
-   -ms-filter: grayscale(100%);
-   -o-filter: grayscale(100%);
+ filter: grayscale(100%);
+ -webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+ -o-filter: grayscale(100%);
 }
 .card:hover img {
-   filter: unset;
+ filter: unset;
 }
 .card:hover a, .card:hover {
-   background: #A5823B;
+ background: #A5823B;
 }
 .card .card-body {
     border-left: 2px solid #A5823B;
@@ -884,6 +884,12 @@ body {
     }
     .why-choosen ul {
         grid-column-gap: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .why-choosen ul {
+        grid-template-columns: auto;
     }
 }
 /*End why choosen*/
