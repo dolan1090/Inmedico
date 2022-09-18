@@ -1783,8 +1783,8 @@ footer .menu-footer li ul {
         top: 348px;
     }
     .slide-health-h {
-        margin-top: 160px;
-        margin-left: -10px;
+        margin-top: 150px;
+        margin-left: -20px;
     }
     .slide-health-h .slick-current .text-bot-hh {
         top: 550px;
@@ -1821,10 +1821,10 @@ footer .menu-footer li ul {
         padding-top: 86px;
         padding-bottom: 380px;
     }
-    /*.box-health-h .slick-prev.slick-arrow {
+    .box-health-h .slick-prev.slick-arrow {
         margin-left: -40px;
     }
     .box-health-h .slick-next.slick-arrow {
         margin-right: -40px;
-        }*/
+        }
     }
