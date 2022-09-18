@@ -112,6 +112,13 @@ body {
     padding: 5px 30px;
     font-family: SVN-Poppins-Regular;
 }
+
+@media (min-width: 1919px) {
+    .jumbotron-h {
+        line-height: 2;
+    }
+}
+
 @media (max-width: 767px) {
     .jumbotron-h .about {
         font-size: 18px;
@@ -120,6 +127,7 @@ body {
         font-size: 28px;
     }
 }
+.jumbotron-about .title2 p {margin-bottom: 0;}
 
 .card {
     background: transparent;
@@ -129,17 +137,17 @@ body {
     color: #fff;
 }
 .card img {
- filter: grayscale(100%);
- -webkit-filter: grayscale(100%);
- -moz-filter: grayscale(100%);
- -ms-filter: grayscale(100%);
- -o-filter: grayscale(100%);
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   -o-filter: grayscale(100%);
 }
 .card:hover img {
- filter: unset;
+   filter: unset;
 }
 .card:hover a, .card:hover {
- background: #A5823B;
+   background: #A5823B;
 }
 .card .card-body {
     border-left: 2px solid #A5823B;
@@ -320,7 +328,7 @@ body {
 
 /*Start box-health-h*/
 .box-health-h {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 280px;
     background: #0D0D0D;
     position: relative;
@@ -453,6 +461,7 @@ body {
     .box-health-h .slick-slide.slick-current img {
         height: 100%;
     }
+
 }
 
 @media (max-width: 1400px) {
@@ -765,7 +774,8 @@ body {
     }
 
     .farming-h .box-card .item p {
-        margin-top: 5px;
+        margin-top: 10px;
+        font-size: 12px;
     }
 
     .farming-h .box-card .item:nth-child(1) {
@@ -1028,6 +1038,10 @@ footer .menu-footer li ul {
 .title-category .img-title {
     width: 50%;
     float: right;
+}
+
+.title-category .img-title img {
+    height: auto;
 }
 
 @media (max-width: 1399px) {
@@ -1605,7 +1619,7 @@ footer .menu-footer li ul {
 .box-about {
     padding-top: 80px;
     padding-bottom: 40px;
-    background: #090909;
+    background-color: #090909 !important;
     font-family: 'SVN-Poppins-Light';
     line-height: 2;
     background: url('images/feature-three-shape.png') no-repeat top right;
@@ -1755,3 +1769,57 @@ footer .menu-footer li ul {
     margin-bottom: 40px;
 }
 /*end kh-dt2 about-page*/
+
+
+
+
+/*responsive full hd*/
+@media (min-width: 1919px) {
+    .box-health-h {
+        padding-top: 86px;
+        padding-bottom: 340px;
+    }
+    .box-health-h .bg-hh {
+        top: 348px;
+    }
+    .slide-health-h {
+        margin-top: 175px;
+    }
+    .slide-health-h .slick-current .text-bot-hh {
+        top: 521px;
+    }
+    .slide-health-h .slick-current .ttct-sp {
+        top: 601px;
+    }
+    .farming-h {
+        padding-top: 109px;
+    }
+    .why-choosen ul {
+        grid-column-gap: 600px;
+    }
+    .box-content .bg-why {
+        width: 406px;
+        height: 663px;
+        left: 40%;
+    }
+    .why-choosen {
+        padding-top: 103px;
+    }
+    .box-content {
+        margin-top: 180px;
+    }
+    .slick-slide.slick-cloned.slick-active {
+        margin-left: -60px;
+        margin-right: 60px;
+    }
+    .box-health-h .slick-slide.slick-current + .slick-slide.slick-active {
+        margin-right: -60px;
+        margin-left: 60px;
+    }
+    .box-health-h .slick-prev.slick-arrow {
+        margin-left: -40px;
+    }
+    .box-health-h .slick-next.slick-arrow {
+        margin-right: -40px;
+    }
+}
