@@ -64,6 +64,13 @@ body {
     overflow:hidden 
 } 
 
+.text-1line { 
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 1; 
+    overflow:hidden 
+} 
+
 .show-mn {display: block !important;}
 
 .h-auto {height: auto !important;}
@@ -92,6 +99,18 @@ body {
 .jumbotron-h p {
     font-family: SVN-Poppins-Medium;
     font-size: 16px;
+}
+.jumbotron-h .title2 .h5 {
+    background: #A5823B;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #A5823B;
+    width: max-content;
+    margin: auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    font-family: SVN-Poppins-Regular;
 }
 @media (max-width: 767px) {
     .jumbotron-h .about {
@@ -133,6 +152,10 @@ body {
     border-bottom-left-radius: 20px;
     background: transparent;
     padding-top: 0;
+}
+.card .img-body img {
+    width: 50px;
+    height: 5px;
 }
 
 
@@ -528,7 +551,7 @@ body {
     }
 }
 
-@media (max-width: 413px) {
+@media (max-width: 415px) {
     .box-health-h .bg-hh {
         top: 310px;
     }
@@ -622,11 +645,6 @@ body {
     position: absolute;
     top: 300px;
     z-index: 1;
-    animation: mymove 18s linear infinite;
-    -webkit-animation: mymove 18s linear infinite;
-    -moz-animation: mymove 18s linear infinite;
-    -ms-animation: mymove 18s linear infinite;
-    -o-animation: mymove 18s linear infinite;
 }
 
 .bg-farming-h {
@@ -742,7 +760,7 @@ body {
     }
 
     .farming-h .box-card .item p {
-        display: none;
+        margin-top: 5px;
     }
 
     .farming-h .box-card .item:nth-child(1) {
@@ -1579,6 +1597,7 @@ footer .menu-footer li ul {
     background: #090909;
     font-family: 'SVN-Poppins-Light';
     line-height: 2;
+    background: url('images/feature-three-shape.png') no-repeat top right;
 }
 
 .box-about h2 {
@@ -1600,3 +1619,128 @@ footer .menu-footer li ul {
 .box-about ul {
     padding-left: 15px;
 }
+
+.box-lvkd {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.slide-lvkd {
+    margin-top: 40px;
+}
+
+.box-lvkd .card .img-body img {
+    filter: unset;
+}
+
+.box-lvkd .card:hover .img-body img {
+    filter: brightness(100) saturate(0);
+}
+
+.box-lvkd .img-body {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+/*start box-tnsm about-page*/
+.box-tnsm {
+    background: #090909;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.box-tnsm .main-tnsm {
+    margin-top: 40px;
+}
+
+.box-tnsm .main-tnsm .list-title {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 0;
+    border: 2px solid #A5823B;
+    border-left: 3px solid #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.box-tnsm .main-tnsm .list-title a {
+    padding: 10px;
+    color: #fff;
+}
+
+.box-tnsm .main-tnsm .list-title a:last-child {
+    border: none;
+}
+
+.box-tnsm .main-tnsm .list-title a.active {
+    background: #A5823B;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+}
+
+.box-tnsm .main-tnsm .list-title a:hover {
+    background: #A5823B;
+    background: #A5823B;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+}
+
+.box-tnsm .main-tnsm .tab-content {
+    border: 2px solid #A5823B;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.box-tnsm .main-tnsm .tab-content .tab-pane.active {
+    display: flex;
+    gap: 15px;
+}
+
+.box-tnsm .main-tnsm .tab-content figure {
+    margin: 0;
+}
+
+.box-tnsm .main-tnsm .tab-content .tab-pane-item:nth-child(2) img {
+    width: 238px;
+    height: 238px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .box-tnsm .main-tnsm .tab-content {
+        margin-top: 20px;
+    }    
+}
+
+@media (max-width: 991px) {
+    .tab-pane-item:nth-child(2) {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .box-tnsm .main-tnsm .tab-content .tab-pane.active {
+        flex-wrap: wrap-reverse;
+    }
+
+    .box-tnsm .main-tnsm .tab-content .tab-pane.active {
+        gap: 20px;
+    }
+}
+/*end box-tnsm about-page*/
+
+/*start kh-dt2 about-page*/
+.kh-dt2 {
+    background: #131313;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    padding: 60px 0;
+}
+
+.kh-dt2 .jumbotron-h {
+    margin-bottom: 40px;
+}
+/*end kh-dt2 about-page*/
