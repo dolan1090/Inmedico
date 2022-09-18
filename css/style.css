@@ -553,7 +553,8 @@ body {
 
 @media (max-width: 415px) {
     .box-health-h .bg-hh {
-        top: 310px;
+        top: 315px;
+        width: 340px;
     }
 
     .slide-health-h .slick-slide.slick-current img {
