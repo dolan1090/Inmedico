@@ -50,7 +50,7 @@ body {
 
 @font-face { 
   font-family: TrajanPro-Bold; 
-  src: url(fonts/TrajanPro-Bold.otf); 
+  src: url(fonts/TrajanPro3-Bold.otf); 
 } 
 
 .clear {
@@ -1024,15 +1024,17 @@ footer .menu-footer li ul {
 }
 
 .title-category {
-    /*background: url('images/bg-tin-tuc.png') no-repeat right, url('images/Mask-Group-40.png') no-repeat left;*/
+    background: url('images/Mask-Group-40.png') no-repeat left;
+    float: left;
+    width: 100%;
 }
 
 .title-category h2, .title-category h1 {
     color: #A5823B;
     text-transform: uppercase;
-    letter-spacing: 2px;
     position: absolute;
     margin-top: calc(0.04*100vw);
+    font-family: TrajanPro-Bold;
 }
 
 .title-category .img-title {
@@ -1777,20 +1779,20 @@ footer .menu-footer li ul {
 @media (min-width: 1919px) {
     .box-health-h {
         padding-top: 86px;
-        padding-bottom: 340px;
+        padding-bottom: 380px;
     }
     .box-health-h .bg-hh {
         top: 348px;
     }
     .slide-health-h {
-        margin-top: 160px;
-        margin-left: -10px;
+        margin-top: 150px;
+        margin-left: -20px;
     }
     .slide-health-h .slick-current .text-bot-hh {
-        top: 521px;
+        top: 550px;
     }
     .slide-health-h .slick-current .ttct-sp {
-        top: 601px;
+        top: 640px;
     }
     .farming-h {
         padding-top: 109px;
@@ -1822,5 +1824,5 @@ footer .menu-footer li ul {
     }
     .box-health-h .slick-next.slick-arrow {
         margin-right: -40px;
-    }*/
-}
+        }*/
+    }
