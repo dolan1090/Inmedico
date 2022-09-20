@@ -24,34 +24,29 @@ body {
 }
 
 @font-face { 
-  font-family: SVN-Poppins-Medium; 
-  src: url(fonts/SVN-Poppins-Medium.otf); 
+  font-family: SanFranciscoDisplay-Thin; 
+  src: url(fonts/SanFranciscoDisplay-Thin.otf); 
 } 
 
 @font-face { 
-  font-family: SVN-Poppins-Light; 
-  src: url(fonts/SVN-Poppins-Light.otf); 
-} 
-
-@font-face { 
-  font-family: SVN-Poppins-Regular; 
-  src: url(fonts/SVN-Poppins-Regular.otf); 
+  font-family: SanFranciscoDisplay-Regular; 
+  src: url(fonts/SanFranciscoDisplay-Regular.otf); 
 }
 
 @font-face { 
-  font-family: SVN-Poppins-Bold; 
-  src: url(fonts/SVN-Poppins-Bold.otf); 
+  font-family: SanFranciscoDisplay-Light; 
+  src: url(fonts/SanFranciscoDisplay-Light.otf); 
 }
 
 @font-face { 
-  font-family: SVN-Poppins-SemiBold; 
-  src: url(fonts/SVN-Poppins-SemiBold.otf); 
+  font-family: SanFranciscoDisplay-Semibold; 
+  src: url(fonts/SanFranciscoDisplay-Semibold.otf); 
 }
 
 @font-face { 
-  font-family: TrajanPro-Bold; 
-  src: url(fonts/TrajanPro3-Bold.otf); 
-} 
+  font-family: SanFranciscoDisplay-Bold; 
+  src: url(fonts/SanFranciscoDisplay-Bold.otf); 
+}
 
 .clear {
   clear: both;
@@ -77,8 +72,7 @@ body {
 
 .jumbotron-h {color: #fff;text-align: center;}
 .jumbotron-h .about, .jumbotron-h .about p {
-    text-transform: uppercase;
-    font-family: TrajanPro-Bold;
+    font-family: 'SanFranciscoDisplay-Semibold';
     margin-bottom: 12px;
     font-size: calc(0.013*100vw);
 }
@@ -87,7 +81,7 @@ body {
     letter-spacing: 2px;
     font-size: calc(0.0235*100vw);
     color: #A5823B;
-    font-family: TrajanPro-Bold;
+    font-family: SanFranciscoDisplay-Semibold;
 }
 .jumbotron-h hr {
     opacity: 1;
@@ -97,7 +91,7 @@ body {
     margin: 15px auto;
 }
 .jumbotron-h p {
-    font-family: SVN-Poppins-Medium;
+    font-family: SanFranciscoDisplay-Thin;
     font-size: 16px;
 }
 .jumbotron-h .title2 .h5 {
@@ -110,7 +104,7 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     padding: 5px 30px;
-    font-family: SVN-Poppins-Regular;
+    font-family: SanFranciscoDisplay-Regular;
 }
 
 .jumbotron-h .title2 .h5 p {
@@ -122,7 +116,7 @@ body {
     margin: auto;
     font-size: 16px;
     text-transform: uppercase;
-    font-family: SVN-Poppins-Regular;
+    font-family: SanFranciscoDisplay-Regular;
 }
 
 @media (min-width: 1919px) {
@@ -149,17 +143,17 @@ body {
     color: #fff;
 }
 .card img {
- filter: grayscale(100%);
- -webkit-filter: grayscale(100%);
- -moz-filter: grayscale(100%);
- -ms-filter: grayscale(100%);
- -o-filter: grayscale(100%);
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   -o-filter: grayscale(100%);
 }
 .card:hover img {
- filter: unset;
+   filter: unset;
 }
 .card:hover a, .card:hover {
- background: #A5823B;
+   background: #A5823B;
 }
 .card .card-body {
     border-left: 2px solid #A5823B;
@@ -198,7 +192,7 @@ body {
 
 #main-nav .sm-clean a {
     color: #FFFFFF;
-    font-family: SVN-Poppins-Medium;
+    font-family: SanFranciscoDisplay-Regular;
     font-size: 16px;
 }
 #main-nav .sm-clean a .sub-arrow {
@@ -424,6 +418,7 @@ body {
     opacity: 1; 
     top: calc(100% + 130px);
     transition: all 2s; 
+    font-family: SanFranciscoDisplay-Regular;
 }
 
 .slide-health-h .slick-current .ttct-sp {
@@ -601,6 +596,9 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+.farming-h .jumbotron-h p {
+    font-family: SanFranciscoDisplay-Light;
+}
 .farming-h .btn-chosen-products {
     color: #A5823B;
     border: 2px solid #A5823B;
@@ -660,7 +658,7 @@ body {
     margin: 0;
     font-size: 14px;
     line-height: 1.2;
-    font-family: SVN-Poppins-Medium;
+    font-family: SanFranciscoDisplay-Regular;
 }
 
 .farming-h .box-card .item a {
@@ -782,12 +780,16 @@ body {
     }
 
     .bg-farming-h .item1 {
-        width: 350px;
+        width: 330px;
     }
 
     .bg-farming-h .item2 {
         top: 195px;
         width: 80px;
+    }
+
+    .farming-h .box-card {
+        overflow: hidden;
     }
 
     .farming-h .box-card .item img {
@@ -845,8 +847,16 @@ body {
     grid-column-gap: 400px;
 }
 
+.why-choosen .jumbotron-h .about, .why-choosen .jumbotron-h .about p {
+    font-family: SanFranciscoDisplay-Regular;
+}
+
+.why-choosen .jumbotron-h .h2 {
+    font-family: SanFranciscoDisplay-Bold;
+}
+
 .why-ct, .why-ct p {
-    font-family: SVN-Poppins-Regular;
+    font-family: SanFranciscoDisplay-Thin;
     font-size: 16px;
 }
 
@@ -871,6 +881,7 @@ body {
     color: #A5823B;
     font-size: 18px;
     text-transform: uppercase;
+    font-family: SanFranciscoDisplay-Bold;
 }
 
 .why-choosen ul li:nth-child(2n+1) {
@@ -935,10 +946,19 @@ body {
 
 .kh-dt p {
     margin-bottom: 0;
-    font-family: SVN-Poppins-SemiBold;
+    font-family: SanFranciscoDisplay-Semibold;
 }
 .kh-dt img {
-    max-width: 98px;
+    max-width: 135px;
+    width: auto;
+}
+
+.kh-dt > .container > .row {
+    align-items: center;
+}
+
+.kh-dt .swiper-slide {
+    text-align: center;
 }
 @media(min-width: 992px) {
     .kh-dt p {
@@ -949,9 +969,11 @@ body {
     .mySwiper-kh {
         padding-top: 5px;
     }
-
     .kh-dt {
         padding: 10px 0;
+    }
+    .kh-dt img {
+        max-height: 34px;
     }
 }
 @media (max-width: 576px) {
@@ -972,7 +994,7 @@ footer {
 }
 
 .brand-bot img {
-    max-width: calc(0.12*100vw);
+    max-width: calc(0.09*100vw);
 }
 
 footer .menu-footer a {color: #fff;line-height: 30px;}
@@ -991,28 +1013,40 @@ footer {
 }
 footer .menu-footer li ul li a {
     color: #adb5bd;
-    font-family: 'SVN-Poppins-Light';
+    font-family: 'SanFranciscoDisplay-Thin';
 }
 footer .menu-footer a:hover {
     color: #A5823B;
+}
+
+footer .content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
 }
 
 footer .content p {
     margin-bottom: 0;
     line-height: 30px;
     color: #adb5bd;
-    font-family: SVN-Poppins-Light;
+    font-family: SanFranciscoDisplay-Thin;
     font-size: 16px;
 }
 
-footer .content .h2 {
-    margin-top: 15px;
+footer .h2 {
     font-size: 21px;
-    font-family: SVN-Poppins-Bold;
+    font-family: SanFranciscoDisplay-Bold;
+    margin-bottom: 20px;   
 }
 
 footer .share-news-d {
-    margin-top: 15px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .share-news-d img {
+    max-width: unset;
 }
 
 footer .share-news-d span {
@@ -1026,6 +1060,25 @@ footer .menu-footer li ul {
 @media (max-width: 767px) {    
     .brand-bot img {
         max-width: 100px;
+    }
+    .menu-footer1 {
+        margin-top: 30px;
+    }
+    footer .h2 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .brand-bot {
+        margin-bottom: 10px;
+    }
+    footer .share-news-d {
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 576px) {
+    footer .content {
+        grid-template-columns: auto;
+        gap: 0;
     }
 }
 /*end footer*/
@@ -1057,7 +1110,7 @@ footer .menu-footer li ul {
     text-transform: uppercase;
     position: absolute;
     margin-top: calc(0.04*100vw);
-    font-family: TrajanPro-Bold;
+    font-family: SanFranciscoDisplay-Semibold;
 }
 
 .title-category .img-title {
@@ -1370,12 +1423,12 @@ footer .menu-footer li ul {
     border: 1px solid #707070;
 }
 
-.box-comment .title-reply img {
+.box-comment #reply-title img {
     max-width: 48px;
     margin-right: 15px;
 }
 
-.box-comment .title-reply {
+.box-comment #reply-title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -1548,7 +1601,7 @@ footer .menu-footer li ul {
     color: #A5823B;
     text-transform: uppercase;
     font-size: 25px;
-    font-family: TrajanPro-Bold;
+    font-family: SanFranciscoDisplay-Semibold;
     margin-bottom: 30px;
     margin-top: 40px;
 }
@@ -1596,6 +1649,7 @@ footer .menu-footer li ul {
     border: 1px solid #707070;
     background: transparent;
     color: #fff;
+    width: 100%;
 }
 
 .box-contract ul.box-form li:nth-child(5) {
@@ -1617,6 +1671,7 @@ footer .menu-footer li ul {
     border: 2px solid;
     border-radius: 10px;
     padding: 5px 15px;
+    width: unset;
 }
 
 .box-contract .box-form input.has-spinner.wpcf7-submit:hover {
@@ -1626,19 +1681,22 @@ footer .menu-footer li ul {
 }
 
 @media (max-width: 767px) {
-    .box-contract form {
+    .box-contract .box-form {
         margin-top: 20px;
     }
 }
 
 @media (max-width: 576px) {
-    .box-contract form {
+    .box-contract .box-form {
         grid-template-columns: auto;
     }
-    .box-contract textarea.content {
-        grid-column: unset;
-        height: 200px;
+    .box-contract .box-form textarea.content {
+        height: 150px;
     }
+    .box-contract ul.box-form li:nth-child(5) {
+        grid-column: unset;
+    }
+
 }
 /*end contract*/
 
@@ -1648,7 +1706,7 @@ footer .menu-footer li ul {
     padding-top: 80px;
     padding-bottom: 40px;
     background-color: #090909 !important;
-    font-family: 'SVN-Poppins-Light';
+    font-family: 'SanFranciscoDisplay-Thin';
     line-height: 2;
     background: url('images/feature-three-shape.png') no-repeat top right;
 }
@@ -1656,13 +1714,13 @@ footer .menu-footer li ul {
 .box-about h2 {
     color: #A5823B;
     font-size: 29px;
-    font-family: TrajanPro-Bold;
+    font-family: SanFranciscoDisplay-Semibold;
 }
 
 .box-about h3 {
     color: #A5823B;
     font-size: 25px;
-    font-family: TrajanPro-Bold;
+    font-family: SanFranciscoDisplay-Semibold;
 }
 
 .box-about ul li::marker {
@@ -1693,6 +1751,15 @@ footer .menu-footer li ul {
 .box-lvkd .img-body {
     margin-top: -5px;
     margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+    .jumbotron-h .title2 .h5 {
+        font-size: 14px;
+        width: auto;
+    }
+    .box-about h2 {
+        margin-top: 20px;
+    }
 }
 
 /*start box-tnsm about-page*/
@@ -1807,6 +1874,12 @@ footer .menu-footer li ul {
 
 /*responsive full hd*/
 @media (min-width: 1919px) {
+    .jumbotron-h .about, .jumbotron-h .about p {
+        font-size: 25px;
+    }
+    .jumbotron-h .h2 {
+        font-size: 45px;
+    }
     .box-health-h {
         padding-top: 86px;
         padding-bottom: 380px;
@@ -1859,10 +1932,10 @@ footer .menu-footer li ul {
         margin-right: -60px;
         margin-left: 60px;
     }
-    /*.box-health-h .slick-prev.slick-arrow {
-        margin-left: -40px;
+    .kh-dt {
+        padding: 74px 0;
     }
-    .box-health-h .slick-next.slick-arrow {
-        margin-right: -40px;
-        }*/
+    footer .content {
+        gap: 91px;
     }
+}
