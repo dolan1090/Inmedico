@@ -118,6 +118,12 @@ body {
     text-transform: uppercase;
     font-family: SanFranciscoDisplay-Regular;
 }
+.jumbotron-p .about, .jumbotron-p .about p {
+    line-height: 1;
+}
+.jumbotron-p .about {
+    text-transform: uppercase;
+}
 
 @media (min-width: 1919px) {
     .jumbotron-h {
@@ -143,17 +149,17 @@ body {
     color: #fff;
 }
 .card img {
-   filter: grayscale(100%);
-   -webkit-filter: grayscale(100%);
-   -moz-filter: grayscale(100%);
-   -ms-filter: grayscale(100%);
-   -o-filter: grayscale(100%);
+ filter: grayscale(100%);
+ -webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+ -o-filter: grayscale(100%);
 }
 .card:hover img {
-   filter: unset;
+ filter: unset;
 }
 .card:hover a, .card:hover {
-   background: #A5823B;
+ background: #A5823B;
 }
 .card .card-body {
     border-left: 2px solid #A5823B;
@@ -170,6 +176,19 @@ body {
 .card .img-body img {
     width: 50px;
     height: 5px;
+}
+
+.card-title {
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.card-text {
+    line-height: 1.625;
+}
+
+.card-footer a {
+    font-size: 16px;
 }
 
 
@@ -592,7 +611,8 @@ body {
 
 /*Start farming-h*/
 .farming-h {
-    background: url(images/Mask-Group-38.png);
+    background: url(images/Mask-Group-38.png) no-repeat;
+    background-size: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -857,7 +877,7 @@ body {
 
 .why-ct, .why-ct p {
     font-family: SanFranciscoDisplay-Thin;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .why-choosen {
@@ -1266,7 +1286,7 @@ footer .copyright {
 }
 
 .news-c .card-time {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .news-c .card-time span {
@@ -1283,7 +1303,7 @@ footer .copyright {
 }
 
 .content-news-d {
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 .media-c {
@@ -1397,7 +1417,6 @@ footer .copyright {
 
 .news-d .title-news-d {
     color: #A5823B;
-    margin-bottom: 20px;
 }
 
 .share-news-d {
@@ -1646,6 +1665,7 @@ footer .copyright {
     display: grid;
     gap: 15px;
     grid-template-columns: auto auto;
+    margin: 0;
 }
 
 .box-contract .box-form input {
@@ -1879,43 +1899,90 @@ footer .copyright {
 
 /*responsive full hd*/
 @media (min-width: 1919px) {
+    .container {
+        max-width: 1217px;
+    }
+    #main-nav .nav-brand img {
+        width: 116px;
+        height: 66.86px;
+    }
+    .mySwiper1 .swiper-pagination {
+        bottom: -58px;
+    }
+    .mySwiper1 .swiper-chevron-down {
+        bottom: -109px;
+    }
+    .slide-main-h {
+        padding-bottom: 135px;
+    }
+
     .jumbotron-h .about, .jumbotron-h .about p {
         font-size: 25px;
+        margin-bottom: 9.79px;
     }
     .jumbotron-h .h2 {
         font-size: 45px;
     }
+    .jumbotron-h p {
+        line-height: 1.54;
+        margin: 0;
+        margin-top: 20px;
+    }
     .box-health-h {
-        padding-top: 86px;
-        padding-bottom: 380px;
+        padding-top: 92px;
+        padding-bottom: 435px;
     }
     .box-health-h .bg-hh {
-        top: 348px;
+        top: 358px;
+    }
+    .farming-h .btn-chosen-products {
+        margin-top: 66px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .slide-health-h {
-        margin-top: 150px;
-        margin-left: -20px;
+        margin-top: 173px;
+        margin-left: -25px;
     }
     .slide-health-h .slick-current .text-bot-hh {
-        top: 550px;
+        top: 552px;
     }
     .slide-health-h .slick-current .ttct-sp {
-        top: 640px;
+        top: 655px;
     }
     .farming-h {
         padding-top: 109px;
+        padding-bottom: 99px;
+    }
+    .farming-h .box-card {
+        margin-top: 67px;
+    }
+
+    .why-choosen .container {
+        padding: 0;
     }
     .why-choosen ul {
-        grid-column-gap: 600px;
-        margin-top: -50px;
+        grid-column-gap: 531px;
+        grid-row-gap: 66px;
     }
     .why-choosen ul li .why-stt {
-        padding: 10px 18px;
-        width: 15%;
+        display: flex;
+        width: 65px;
+        height: 65px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: space-around;
+        font-family: SanFranciscoDisplay-Semibold;
+    }
+    .why-choosen ul li:nth-child(2n+1) .why-stt {
+        margin-right: 25.5px;
+    }
+    .why-choosen ul li:nth-child(2n+2) .why-stt {
+        margin-left: 25.5px;
     }
     .why-choosen ul li .content {
         float: left;
-        width: 80%;
+        width: 252px;
     }
     .box-content .bg-why {
         width: 406px;
@@ -1926,7 +1993,7 @@ footer .copyright {
         padding-top: 103px;
     }
     .box-content {
-        margin-top: 180px;
+        margin-top: 108px;
         min-height: 550px;
     }
     .slick-slide.slick-cloned.slick-active {
@@ -1937,10 +2004,135 @@ footer .copyright {
         margin-right: -60px;
         margin-left: 60px;
     }
+    .box-health-h .slick-prev.pull-left.slick-arrow {
+        margin-left: -70px;
+        position: absolute;
+        top: 41%;
+        z-index: 9;
+    }
+    .box-health-h .slick-next.pull-right.slick-arrow {
+        margin-right: -70px;
+    }
     .kh-dt {
-        padding: 74px 0;
+        padding: 64px 0;
+    }
+    .kh-dt p {
+        font-size: 38px;
+        width: 202px;
     }
     footer .content {
-        gap: 91px;
+        gap: 80px;
     }
+
+    .title-category .img-title {
+        width: 1080px;
+        height: 322px;
+    }
+
+    .slide-lvkd {
+        margin-top: 60.25px;
+    }
+    .box-tnsm {
+        padding-top: 83.5px;
+        padding-bottom: 115.6px;
+    }
+    .box-lvkd {
+        padding-bottom: 58.5px;
+    }
+    .box-tnsm .main-tnsm {
+        margin-top: 58.4px;
+    }
+    .box-tnsm .main-tnsm .list-title a {
+        padding: 26.5px;
+    }
+    .box-tnsm .main-tnsm .tab-content {
+        padding: 33.5px 52px;
+    }
+    .box-tnsm .main-tnsm .tab-content .tab-pane.active {
+        gap: 35px;
+    }
+
+    .kh-dt2 {
+        padding-top: 82.25px;
+        padding-bottom: 143px;
+    }
+    .kh-dt2 .mySwiper-kh {
+        margin-top: 62px;
+    }
+
+    .news-c {
+        padding-top: 84px;
+        padding-bottom: 93px;
+    }
+
+    .news-c .row.row-cols-1.row-cols-md-3.g-4 {
+        grid-column-gap: 43px;
+        grid-row-gap: 50px;
+    }
+
+    .news-c .col {
+        padding: 0;
+        width: 377px;
+        margin: 0;
+    }
+    .news-c .col .card .card-body {
+        padding-top: 26px;
+        padding-left: 28px;
+        padding-right: 28px;
+        padding-bottom: 13px;
+    }
+    .news-c .col .card .card-footer {
+        padding-left: 28px;
+        padding-bottom: 28px;
+    }
+
+    .ptr-category {
+        margin-top: 66px;
+    }
+
+    .ptr-category .pagination .page-numbers {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 21px;
+        font-weight: bold;
+        margin: 0 10px;
+        border: 2px solid #A5823B;
+    }
+
+    .ptr-category .prev.page-numbers, .ptr-category .next.page-numbers {
+        width: 120px;
+    }
+
+    .news-d {
+        padding-top: 65px;
+    }
+    .news-d .box-date {
+        margin-bottom: 44.38px;
+    }
+    .news-other .swiper-button-prev {
+        left: 287px;
+    }
+    .news-other .swiper-button-next {
+        right: 287px;
+    }
+    .news-other {
+        padding-bottom: 154.28px;
+    }
+
+    .box-contract {
+        padding-bottom: 82px;
+    }
+    .box-contract h2 {
+        margin-top: 54px;
+        margin-bottom: 29px;
+    }
+
+    .title-category h2, .title-category h1 {
+        margin-top: 128px;
+    }
+
+
 }
